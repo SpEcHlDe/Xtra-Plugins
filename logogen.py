@@ -25,7 +25,7 @@ def download_images(images):
     print(f"Total {len(images)} Image Found!")
     if len(images) != 0:
         count = 0
-        for i, image in enumerate(images):
+        for image in images:
             try:
                 image_link = image["data-srcset"] 
             except: 
